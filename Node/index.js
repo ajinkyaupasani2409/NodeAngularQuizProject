@@ -59,7 +59,7 @@ app.use(function(req, res, next) {
     console.log("Response3",answers);
 
 
-    let attempted = 0;
+    //let attempted = 0;
     let score = 0;
     var mode;
     let wrong = 0;
@@ -81,7 +81,7 @@ app.use(function(req, res, next) {
 
 
     if(!timeOut){
-      if (answers.length == attempted){
+     
         mode = 'result';
 
         for (const key in quizQuestions) {
@@ -97,20 +97,7 @@ app.use(function(req, res, next) {
         wrong = answers.length-score;
         console.log('correct:', score, 'Incorrect:', wrong);
         scoredOnce=true;
-      }
-      else {
-      console.log("Attempt all questions");
-      // error: {
-      //   alert("hgjkl");
-      // }
-        //alert("Attempt all questions");
-         JSAlert.alert("This is an alert.");
-         //res.send('<script>alert("Hello")</script>')
-        // popupS.alert({
-        //   content: 'error'
-        // });
-
-      }
+      
     }
 
 
