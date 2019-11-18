@@ -1,0 +1,23 @@
+<div> 
+ 
+  <div class="topnav">
+    <a  href="home"><img src="https://raw.githubusercontent.com/srikarpv/ProductManagement/master/clipart1141632.png" height="50px" width="50px"></a>
+    <div class="topnav-right">
+    <a><div style="margin: 2px;" class="btn btn-lg btn-dark rounded center">Welcome {{username}}</div></a>
+    
+    </div>
+    
+    </div>
+    <br><button style="margin-right: 10px; " class="topnav-right btn btn-outline-warning btn-danger col-md-2 rounded" mat-button *ngIf="auth.isLoggednIn()" (click)="auth.logout()">Logout</button>
+  <br><br><br><br>
+  <table align="center">
+    <tr><td><h1>Select Quiz:</h1></td></tr><br>
+   <tr> <td><select style="width: 500px;" name="wgtmsr" id="wgtmsr"  [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
+      <option *ngFor="let quiz of quizes" [value]="quiz.id">{{quiz.name}}</option>
+    </select></td></tr></table><br>
+    <input class="btn btn-primary btn-xl btn-outline-dark col-md-2 rounded " id="button1" type="submit" [routerLink]="['/quiz',quiz.id]">
+
+    
+    
+  </div>
+

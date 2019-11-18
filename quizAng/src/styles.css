@@ -1,0 +1,91 @@
+.btn{
+    border-radius: 0;
+}
+.button1 {
+    background-color: #393f4d; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+  }
+
+  #wgtmsr{
+ width:300px;   
+ height:25px;
+}
+legend {
+    background-color: #393f4d;
+    color: #fff;
+    padding: 2px 2px;
+    height:40px ;
+    width:150px ;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background:#e1e8f0;
+    margin: 0 auto 0 auto;  
+    width:100%; 
+    text-align:center;
+    margin: 20px 0px 20px 0px;   
+  }
+  fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+  }
+.option{
+    background-color:#cadaee;
+    font-size:20px;
+    padding:10px;
+    margin:3px;
+}
+    #quiz .options input[type=checkbox] {
+        height:22px;
+        width:22px;
+    }
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.result-question{
+    background-color:#eee;
+    margin:4px;
+    padding:6px;
+}
+
+@media only screen and (max-width: 480px) {
+    h1,.h1{
+        font-size:22px;
+    }
+    h2,.h2{
+        font-size:20px;
+    }
+    h3,.h3{
+        font-size:18px;
+    }
+    .option {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

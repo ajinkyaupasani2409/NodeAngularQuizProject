@@ -1,0 +1,20 @@
+<body>
+    <br><br><br><img src="https://raw.githubusercontent.com/srikarpv/ProductManagement/master/clipart1141632.png" height="100px" width="100px"> <br><br>
+
+    <table class="table-striped" style="margin:0 auto;">
+        <fieldset  height="200px">
+  <h2>Login</h2><br>
+
+<tr> <td>    <label for="uname"><b>Username </b></label>
+    <input type="text" placeholder="Enter Username" name="uname" #uname required>
+<br>
+<br></td></tr>
+    <tr><td><label for="psw"><b>Password </b></label>
+    <input type="password" placeholder="Enter Password " name="psw" #psw required></td></tr>
+<br>
+<br>
+    <button class="button1" id="button1" (click)="welcomeMe(uname.value,psw.value)">Submit</button>
+  </fieldset>
+  </table>
+<label>{{error}}</label>
+</body>
