@@ -73,8 +73,8 @@
       </td><td>
       </td></tr></table>
     <br><br><br><br><br>
-    <h1 align="center">User name : {{username}}</h1><br>
-    <h1 align="center">Quiz Result for {{quiz.name}}</h1><br>
+    <u><h1 align="center">User name : {{username}}</h1></u><br>
+    <h1 align="center">Quiz Result for <u><i>{{quiz.name}}</i></u></h1><br>
     <h1 align="center">Correct: {{score}}</h1>
     <h1 align="center">Incorrect: {{wrong}}</h1><br>
     <h2 align="center">Time used: {{ellapsedTime}} / {{duration}}</h2>
@@ -85,6 +85,7 @@
   <br><br><a [routerLink]="['/home']"  class="btn btn-success btn-outline-dark btn-lg col-md-3">Home</a>
   <br><br><button mat-button class="btn btn-danger btn-outline-warning btn-lg col-md-2" *ngIf="auth.isLoggednIn()" (click)="auth.logout()">Logout</button>
   </div>
+  
   
 <br><br><br><br>
   <div *ngFor="let question of quiz.questions; let index = index">

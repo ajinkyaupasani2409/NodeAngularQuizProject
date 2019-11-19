@@ -33,7 +33,7 @@ export class QuizComponent implements OnInit {
     'allowBack': true,
     'allowReview': true,
     'autoMove': false,  // if true, it will move to next question automatically when answered.
-    'duration': 300,  // indicates the time (in secs) in which quiz needs to be completed. 0 means unlimited.
+    'duration': 2,  // indicates the time (in secs) in which quiz needs to be completed. 0 means unlimited.
     'pageSize': 1,
     'requiredAll': false,  // indicates if you must answer all the questions before submitting.
     'richText': false,
