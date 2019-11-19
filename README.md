@@ -1,6 +1,8 @@
 # NodeAngularQuizProject
 Quiz Project 
 
+***  For best functionality, run the angular localhost on Internet Explorer or Microsoft Edge  ****
+
 Packages needed to install : 
 
 In Angular Folder
