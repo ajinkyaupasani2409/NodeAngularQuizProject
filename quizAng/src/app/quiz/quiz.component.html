@@ -10,7 +10,7 @@
   <table align="center"><tr><td><img src="https://raw.githubusercontent.com/srikarpv/ProductManagement/master/clipart1141632.png" width="100" height="100">
   </td><td>
   </td></tr></table><br>
-  <h2>{{username}}</h2><br><br>
+  <h2>{{username}}</h2>
   <hr />
 
   <h1 class="text-center font-weight-normal">{{quiz.name}}</h1>
@@ -61,16 +61,32 @@
       </div>
     </div> -->
     <div class="text-center">
-        <form id="qwe">
+      <!-- <form id="qwe"> -->
     <h2>Quiz Result</h2><br>
     <h4>Correct: {{score}}</h4>
     <h4>Incorrect: {{wrong}}</h4>
-    <br><br>
+    <br>
+  <!-- </form> -->
+  <form style="display: none;  " id="qwe" >
+    
+      <table align="center"><tr><td><img src="https://raw.githubusercontent.com/srikarpv/ProductManagement/master/clipart1141632.png" width="100" height="100">
+      </td><td>
+      </td></tr></table>
+    <br><br><br><br><br>
+    <u><h1 align="center">User name : {{username}}</h1></u><br>
+    <h1 align="center">Quiz Result for <u><i>{{quiz.name}}</i></u></h1><br>
+    <h1 align="center">Correct: {{score}}</h1>
+    <h1 align="center">Incorrect: {{wrong}}</h1><br>
+    <h2 align="center">Time used: {{ellapsedTime}} / {{duration}}</h2>
+  
   </form>
-  <button class="btn btn-primary btn-outline-dark btn-lg col-md-4"   (click)="printTest()">Download Result</button>
+  
+  <button class="btn btn-primary btn-outline-dark btn-lg col-md-4"   (click)="printTest()">Download/Print Result</button>
   <br><br><a [routerLink]="['/home']"  class="btn btn-success btn-outline-dark btn-lg col-md-3">Home</a>
   <br><br><button mat-button class="btn btn-danger btn-outline-warning btn-lg col-md-2" *ngIf="auth.isLoggednIn()" (click)="auth.logout()">Logout</button>
   </div>
+  
+  
 <br><br><br><br>
   <div *ngFor="let question of quiz.questions; let index = index">
     <div class="result-question">
