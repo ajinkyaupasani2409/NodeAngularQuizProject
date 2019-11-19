@@ -162,7 +162,7 @@
                     "id": 1057,
                     "questionId": 1010,
                     "name": "West Indies",
-                    "isAnswer": true
+                    "isAnswer": false
                 },
                 {
                     "id": 1056,
@@ -174,7 +174,7 @@
                     "id": 1058,
                     "questionId": 1010,
                     "name": "England",
-                    "isAnswer": false
+                    "isAnswer": true
                 }
             ],
             "questionType": {
@@ -239,7 +239,7 @@
                 {
                     "id": 1057,
                     "questionId": 1010,
-                    "name": "The Green Bay Packer",
+                    "name": "The Green Bay Packers",
                     "isAnswer": true
                 },
                 {

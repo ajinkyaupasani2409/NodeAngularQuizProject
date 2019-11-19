@@ -157,7 +157,7 @@
                     "id": 1055,
                     "questionId": 1010,
                     "name": "8 minutes 20 seconds",
-                    "isAnswer": true
+                    "isAnswer": false
                 },
                 {
                     "id": 1057,
@@ -205,7 +205,7 @@
                     "id": 1056,
                     "questionId": 1010,
                     "name": "After the valcano",
-                    "isAnswer": true
+                    "isAnswer": false
                 },
                 {
                     "id": 1058,
